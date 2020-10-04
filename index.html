@@ -3,39 +3,146 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Marc Picornell's website</title>
+  <meta name="description" content="Marc Picornell's website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <div class="container">
+    <!-- Start of my body for the project 2 
+        I use boilerplate for a start and removed the unneeded bits
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+        General rules:  H1 for Title
+                        H2 for Nav elements
+                        H3 for every blocks of the portfolio
+        I have divided my work in 3 parts
+                        HEADER, MAIN, FOOTER
+                        I have inputing all the content without thinking of the layout yet
+    -->
+    <header>
+      <h1>Marc Picornell</h1>
+      <nav class="navigation">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#portfolio"></a><li>Portfolio</li></a>
+          <a href="#skills"></a><li>Skills</li></a>
+          <a href="#contact"></a><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <main>
+        <!-- Portrait -->
+        <img src="img/responsive-layout-profile.png" alt="Profile">
+        <p>
+          Hi I'm a front-end developper who loves responsive design and css.
+          I recently finished a degree in front-end web development at Treehouse amd am excited to put all my skills to use!
+        </p>
+        <h2>Portfolio</h2>
+
+        <!-- Marketing -->
+        <div class="portfolio">
+          <img src="img/portfolio-1.png" alt="portfolio-1">
+          <h3>
+            Marketing Page
+          </h3>
+          <p>
+            This project shows the front page of a marketing website meant for a specific business I'm interested in.
+          </p>
+        </div>
+
+        <!-- Search -->
+        <div class="portfolio">
+          <img src="img/portfolio-2.png" alt="portfolio-2">
+          <h3>
+            Search Page
+          </h3>
+          <p>
+            This project searches through a specific database to find information that the user is trying to look up.
+          </p>
+        </div>
+
+        <!-- Travel -->
+        <div class="portfolio">
+          <img src="img/portfolio-3.png" alt="portfolio-3">
+          <h3>
+            Travel App
+          </h3>
+          <p>
+            This project compares travel times based on different transportation methods and tells you the best one.
+          </p>
+        </div>
+
+        <!-- Maps -->
+        <div class="portfolio">
+          <img src="img/portfolio-4.png" alt="portfolio-4">
+          <h3>
+            Map of Favorite Spots
+          </h3>
+          <p>
+            This project compares travel times based on different transportation methods and tells you the best one.
+          </p>
+        </div>
+
+        <!-- Photo -->
+        <div class="portfolio">
+          <img src="img/portfolio-5.png" alt="portfolio-5">
+          <h3>
+            Photo Gallery
+          </h3>
+          <p>
+            This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+          </p>
+        </div>
+
+        <!-- Calculator -->
+        <div class="portfolio">
+          <img src="img/portfolio-6.png" alt="portfolio-6">
+          <h3>
+            Calculator
+          </h3>
+          <p>
+            Someone can enter in the numbers they want, and press the big blue button and get the result.
+          </p>
+        </div>
+        
+        <h2>Skills</h2>
+        
+    </main>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!
+      </p>
+      <p class="phone">
+        <!-- Add a tel URL for making the phone number usable -->
+        Phone 
+        <a href="tel:+353896184400">
+          +353.89 618 4400
+        </a>
+      </p>
+      <p class="e-mail">
+        <!-- Add a mailto to the URL -->
+        E-mail 
+        <a href="mailto:marc@marcpicornell.com">
+          marc@marcpicornell.com
+        </a>
+      </p>
+
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </div>
 </body>
 
 </html>
