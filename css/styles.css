@@ -5,16 +5,78 @@
     marc [at] marcpicornell.com
     You like it :-) say hi!
 */
-/* Fonts */
-
-/* Generic */
-
-/* ID */
-
-/* Class */
-
-/* Media */
-@media all ()
+* 
 {
+    box-sizing: border-box;
+    
+}
+.container 
+{
+    max-width: 320px;
+}
 
+ header 
+ {
+     text-align: center;
+     display: block;
+ }
+
+ main 
+ {
+     padding-left: 6px;
+     padding-right: 6px;
+     margin-left: 11px;
+     margin-right: 11px;
+ }
+
+body 
+{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: darkslategray;
+}
+
+a 
+{
+    font-weight: bolder;
+}
+
+ul
+{
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+a 
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkslategray;
+    font-size: smaller;
+}
+
+li 
+{
+    list-style: none;
+    padding: 5px;
+}
+
+h2, h3
+{
+    padding: 5px;
+}
+
+img
+{
+    padding: 0;
+    margin: 0;
+    max-width: 96%;
+}
+
+.portfolio p 
+{
+    margin-top: 2em;
 }
