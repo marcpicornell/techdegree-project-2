@@ -7,8 +7,7 @@
 */
 * 
 {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
  header 
@@ -127,7 +126,8 @@ img
     .portfolio-5
     {
         float: left;
-        max-width: 45%;
+        width: 50%;
+        min-height: 425px;
         align: center;
     }
 
@@ -137,10 +137,47 @@ img
     {
         align: center;
         float: right;
-        max-width: 45%;
+        width: 50%;
+        min-height: 425px;
     }
 
     article p 
     {
+    }
+}
+
+/********** Desktop **********/
+@media (min-width: 1024px)
+{   
+    .profile-picture
+    {
+        float: right;
+        width: 30%;
+    }
+
+    .profile
+    {
+        text-align: left;
+        width: 45%;
+    }
+
+    li
+    {
+        display: inline-block;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3,
+    .portfolio-4,
+    .portfolio-5,
+    .portfolio-6
+    
+    {
+        width: 30%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        min-height: 425px;
     }
 }
