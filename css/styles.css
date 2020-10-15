@@ -10,10 +10,6 @@
     box-sizing: border-box;
     
 }
-.container 
-{
-    max-width: 320px;
-}
 
  header 
  {
@@ -79,4 +75,72 @@ img
 .portfolio p 
 {
     margin-top: 2em;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media (min-width: 768px)
+{
+    main
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul
+    {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    
+    li
+    {
+        display: inline-block;
+    }
+
+    .profile-picture
+    {
+        float: right;
+        width: 30%;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .profile
+    {
+        text-align: left;
+        width: 45%;
+        margin: 10px;
+        padding-right: 20px;
+    }
+
+    h2,
+    h3
+    {
+        clear: both;
+    }
+    
+    .portfolio-1,
+    .portfolio-3,
+    .portfolio-5
+    {
+        float: left;
+        max-width: 45%;
+        align: center;
+    }
+
+    .portfolio-2,
+    .portfolio-4,
+    .portfolio-6
+    {
+        align: center;
+        float: right;
+        max-width: 45%;
+    }
+
+    article p 
+    {
+    }
 }
