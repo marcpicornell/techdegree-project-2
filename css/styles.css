@@ -7,7 +7,7 @@
 */
 * 
 {
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
  header 
@@ -50,6 +50,7 @@ ul
     font-size: smaller;
     font-family: 'Roboto', sans-serif;
     margin: 0  20px 0 20px;
+    color: #0479ff;
 }
 
 a 
@@ -92,6 +93,27 @@ article p
     margin-top: 2em;
 }
 
+.skill
+{
+    align-content: center;
+}
+
+.skill ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.skill li
+{
+    clear: both;
+    border-radius: 8px;
+    display: inline-block;
+    background: #0479ff;
+    color: white;
+    padding: 5px 10px;
+    margin: 4px;
+}
 .footer
 {
     font-size: smaller;
@@ -180,7 +202,7 @@ article p
         margin-left: 2%;
         padding-left: 10px;
         padding-right: 10px;
-        color: grey;
+        color: #9b04ff;
         font-size: larger;
     }
 
@@ -226,6 +248,27 @@ article p
         display: inline;
     }
 
+    .skill
+    {
+        align-content: center;
+    }
+    .skill ul
+    {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .skill li
+    {
+        clear: both;
+        border-radius: 8px;
+        display: inline-block;
+        background: #9b04ff;
+        color: white;
+        padding: 5px 10px;
+        margin: 4px;
+    }
+
     .footer
     {
         text-align: center;
@@ -268,7 +311,6 @@ article p
         margin: 0 0 0 10px;
         padding: 0;
         float: left;
-        width: 42%;
         font-size: 1.1em;
     }
 
@@ -303,12 +345,23 @@ article p
         font-size: large;
     }
 
-    .footer
+    footer
     {
-        text-align: center;
-        margin: 0 32% 0 32%;
-        height: 50px;
+        margin: 0;
+        padding: 0;
     }
+
+    .skill
+    {
+        align-content: center;
+        display: inline;
+    }
+
+    .skill ul
+    {
+        display: inline;
+    }
+
 
     .footer-name
     {
