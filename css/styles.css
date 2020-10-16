@@ -175,7 +175,13 @@ article p
 
     .profile
     {
-        text-align: left;
+        text-align: justify;
+        width: 55%;
+        margin-left: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: grey;
+        font-size: larger;
     }
 
     h2,
@@ -228,6 +234,14 @@ article p
         margin: 0 26% 0 26%;
         height: 50px;
     }
+    .footer-nav
+    {
+        margin-right: 10px;
+    }
+    .footer-name
+    {
+        margin-left: 10px;
+    }
 }
 
 /********** Desktop **********/
@@ -236,29 +250,28 @@ article p
     h1
     {
         float: left;
-        display: inline-block;
+        margin-left: 10px;
     }
 
     ul
     {
         float: right;
-        display: inline-block;
+        margin-right: 10px;
     }
     
     .profile-picture
     {
-        clear: both;
         float: right;
         width: 30%;
     }
 
     .profile
     {
-        clear: both;
-        text-align: left;
-        width: 45%;
-        margin: 0;
-        padding-right: 6%;
+        margin: 0 0 0 10px;
+        padding: 0;
+        float: left;
+        width: 42%;
+        font-size: 1.1em;
     }
 
     li
@@ -281,13 +294,31 @@ article p
     article p
     {
         font-weight: 100;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
 
+    }
+
+    .phone a,
+    .e-mail a 
+    {
+        font-size: large;
     }
 
     .footer
     {
+        text-align: center;
+        margin: 0 32% 0 32%;
         height: 50px;
+    }
+
+    .footer-name
+    {
+        padding-left: 10px;
+    }
+
+    .footer-nav
+    {
+        padding-right: 10px;
     }
 }
