@@ -197,14 +197,12 @@ article p
         float: left;
         width: 50%;
         min-height: 425px;
-        align: center;
     }
 
     .portfolio-2,
     .portfolio-4,
     .portfolio-6
     {
-        align: center;
         float: right;
         width: 50%;
         min-height: 425px;
