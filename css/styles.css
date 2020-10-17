@@ -295,6 +295,12 @@ article p
         margin-top: -10px;
         
     }
+
+    .navigation
+    {
+        text-align: right;
+    }
+
     main
     {
         padding: 0;
@@ -310,6 +316,7 @@ article p
     {
         float: right;
         width: 30%;
+        margin: 0 13    px 0 0;
     }
 
     .profile
