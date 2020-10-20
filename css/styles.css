@@ -14,9 +14,10 @@
         padding: 0;
     }
 
-body {
-    margin: 3%;
-}
+body 
+    {
+        margin: 3%;
+    }
 
 h1, h2, h3 
     {
@@ -59,16 +60,15 @@ a   {
         font-weight: bolder;
     }
 
-    .profile-picture 
-{
-    width: 90%;
-}
+.profile-picture 
+    {
+        width: 90%;
+    }
 
 .skill li 
     {
         font-size: smaller;
     }
-
 
 .phone a,
 .e-mail a
@@ -102,4 +102,4 @@ a   {
         {
             width: 90%;
         }
-
+    }
