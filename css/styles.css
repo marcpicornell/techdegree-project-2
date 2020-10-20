@@ -1,388 +1,105 @@
 /* 
-    Project 2
+    Project 2 with Flexbox
     Marc Picornell
-    03 sep 2020
+    19 oct 2020
     marc [at] marcpicornell.com
     You like it :-) say hi!
 */
 * 
-{
-    box-sizing: border-box;
-}
-
- header 
- {
-     text-align: center;
-     display: block;
- }
-
- main 
- {
-     padding-left: 6px;
-     padding-right: 6px;
-     margin-left: 11px;
-     margin-right: 11px;
- }
-
-body 
-{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: darkslategray;
-}
-
-ul
-{
-    margin-bottom: 20px;
-    padding: 0;
-
-}
-
-.profile-picture
-{
-    width: 60%;
-}
-
-.profile
-{
-    font-size: smaller;
-    font-family: 'Roboto', sans-serif;
-    margin: 0  20px 0 20px;
-    color: #0479ff;
-}
-
-a 
-{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: darkslategray;
-    font-size: smaller;
-    font-weight: bolder;
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-}
-
-li 
-{
-    list-style: none;
-    padding: 5px;
-}
-
-h2, h3
-{
-    padding: 5px;
-}
-
-img
-{
-    padding: 0;
-    margin: 0;
-    max-width: 96%;
-}
-
-article p
-{
-    font-size: smaller;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 25px 30px 25px;
-}
-
-.portfolio p 
-{
-    margin-top: 2em;
-}
-
-.skill
-{
-    align-content: center;
-}
-
-.skill ul
-{
-    padding: 0;
-    margin: 0;
-}
-
-.skill li
-{
-    clear: both;
-    border-radius: 8px;
-    display: inline-block;
-    background: #0479ff;
-    color: white;
-    padding: 5px 10px;
-    margin: 4px;
-}
-.footer
-{
-    font-size: smaller;
-    margin: 0 30px 10px 30px;
-}
-
-.phone p,
-.e-mail p
-{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.5em;
-    font-weight: lighter;
-}
-
-.e-mail a
-{
-    text-transform: lowercase;
-
-}
-
-.footer-name
-{
-    font-size: smaller;
-    text-align: left;
-    float: left;
-    margin: 2px;
-    font-weight: bold;
-}
-
-.footer-nav
-{
-    font-size: smaller;
-    text-align: right;
-    text-transform: uppercase;
-    margin: 4px;
-}
-
-.mobile
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    text-align: right;
-    margin: 4px;
-}
-
-.td
-{
-    list-style: none;
-    padding: 5px;
-    display: none;
-    text-align: right;
-}
-/* MEDIA QUERY */
-
-/* TABLET */
-
-@media (min-width: 768px)
-{
-
-    main
     {
-        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        color: darkslategray;
+        text-align: center;
         margin: 0;
+        padding: 0;
     }
 
-    ul li
+body {
+    margin: 3%;
+}
+
+h1, h2, h3 
     {
-        display: inline-block;
-    }
-    
-    .profile-picture
-    {
-        float: right;
-        width: 30%;
-        margin-right: 50px;
-        margin-bottom: 50px;
-        clear: both;
+        color: black;
+        margin: 3%;
     }
 
-    .profile
+p 
     {
-        text-align: justify;
-        width: 55%;
-        margin-left: 2%;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: #9b04ff;
-        font-size: larger;
+        font-size: smaller;
+        margin: 9%;
     }
 
-    h2,
-    h3
-    {
-        clear: both;
-    }
-    
-    .portfolio-1,
-    .portfolio-3,
-    .portfolio-5
-    {
-        float: left;
-        width: 50%;
-        min-height: 425px;
-    }
-
-    .portfolio-2,
-    .portfolio-4,
-    .portfolio-6
-    {
-        float: right;
-        width: 50%;
-        min-height: 425px;
-    }
-
-    article p
-    {
-        font-weight: 100;
-        padding-left: 30px;
-        padding-right: 30px;
+li {
+        list-style: none;
 
     }
 
-    .mobile
+img 
+    {
+        max-width: 100%;
+    }
+
+.navigation ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+a   {
+        text-decoration: none;
+    }
+
+.navigation li
+    {
+        justify-content: center;
+        margin: 5px;
+        text-transform: uppercase;
+        font-size: 85%;
+        font-weight: bolder;
+    }
+
+    .profile-picture 
+{
+    width: 90%;
+}
+
+.skill li 
+    {
+        font-size: smaller;
+    }
+
+
+.phone a,
+.e-mail a
+    {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+.footer
+    {
+        display: flex;
+    }
+
+.td 
     {
         display: none;
     }
 
-    .td
+@media screen and (min-width: 769px)
     {
-        display: inline;
+        .navigation ul
+        {
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 
-    .skill
+@media screen and (min-width: 1025px)
     {
-        align-content: center;
-    }
-    .skill ul
-    {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .skill li
-    {
-        clear: both;
-        border-radius: 8px;
-        display: inline-block;
-        background: #9b04ff;
-        color: white;
-        padding: 5px 10px;
-        margin: 4px;
-    }
+        *
+        {
+            width: 90%;
+        }
 
-    .footer
-    {
-        text-align: center;
-        margin: 0 26% 0 26%;
-        height: 50px;
-    }
-    .footer-nav
-    {
-        margin-right: 10px;
-    }
-    .footer-name
-    {
-        margin-left: 10px;
-    }
-}
-
-/********** Desktop **********/
-@media (min-width: 1024px)
-{   
-    h1
-    {
-        float: left;
-        margin-left: 10px;
-        margin-top: -10px;
-        
-    }
-
-    .navigation
-    {
-        text-align: right;
-    }
-
-    main
-    {
-        padding: 0;
-        margin: 0;
-    }
-
-    ul
-    {
-        margin-right: 10px;
-    }
-    
-    .profile-picture
-    {
-        float: right;
-        width: 30%;
-        margin: 0 13    px 0 0;
-    }
-
-    .profile
-    {
-        margin: 0 0 0 10px;
-        padding: 0;
-        float: left;
-        font-size: 1.1em;
-    }
-
-    li
-    {
-        display: inline-block;
-    }
-
-    .portfolio-1,
-    .portfolio-2,
-    .portfolio-3,
-    .portfolio-4,
-    .portfolio-5,
-    .portfolio-6
-    {
-        width: 33%;
-        float: left;
-        min-height: 425px;
-    }
-    
-    article p
-    {
-        font-weight: 100;
-        padding-left: 25px;
-        padding-right: 25px;
-
-    }
-
-    .phone a,
-    .e-mail a 
-    {
-        font-size: large;
-    }
-
-    footer
-    {
-        margin: 0;
-        padding: 0;
-    }
-
-    .skill
-    {
-        align-content: center;
-        display: inline;
-    }
-
-    .skill ul
-    {
-        display: inline;
-    }
-
-
-    .footer-name
-    {
-        padding-left: 10px;
-    }
-
-    .footer-nav
-    {
-        padding-right: 10px;
-    }
-}
